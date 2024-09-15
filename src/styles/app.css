@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    max-height: 15vh;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-size: 6vh;
+    padding-bottom: 2vh;
+}
+
+button {
+    background-color: green;
+    padding: 1vh 3vw;
+    border-radius: 50px;
+    color: #fff;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: -6vh;
+    margin-bottom: -3vh;
+    z-index: 10;
+    opacity: 0.95;
+}
+
+@media only screen and (min-width: 900px) {
+   .wrapper {
+    height: 100vh;
+   }
+   
+    h1 {
+        font-size: 12vh;
+    }
+
+    .image-container {
+        flex-direction: row;
+        justify-content: space-between;
+        max-height: 85vh;    
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        max-height: 100%;
+        padding: 0 0.5vw;
+    }
+
+    .image2 {
+        padding-bottom: 5vh;
+    }
+
+    button {
+        margin: 0 1vw;
+        padding: 1vh 1vw;
+    }
+}
+
