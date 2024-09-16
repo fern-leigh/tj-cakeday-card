@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Cabin Sketch", sans-serif;
+
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -31,7 +36,6 @@ img {
 h1 {
     text-align: center;
     color: green;
-    font-family: "Cabin Sketch", sans-serif;
     font-weight: 700;
     font-size: 6vh;
     padding-bottom: 2vh;
@@ -42,13 +46,20 @@ button {
     padding: 1vh 3vw;
     border-radius: 50px;
     color: #fff;
-    font-family: "Cabin Sketch", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
     margin-top: -6vh;
     margin-bottom: -3vh;
     z-index: 10;
     opacity: 0.95;
+}
+
+button:hover {
+    background-color: black;
+}
+
+button:active {
+    background-color: limegreen;
 }
 
 @media only screen and (min-width: 900px) {
