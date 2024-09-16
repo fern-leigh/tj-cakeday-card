@@ -74,20 +74,59 @@ button:active {
     font-weight: 700;     
 }
 
-video {
-    max-width: 100vw;
-}
+
 
 .basil-container p {
     color: #e77d22;
     padding: 3vh;
     border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.basil-container h1 {
+    height: 70vh;
+    align-content: center;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .video-container p {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
+
+}
+
+
+video {
+    max-height: 70vh;
+    max-width: 95vw;
+}
+
+.scroll {
+    height: 10vh;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 2vh;
+}
+
+.msg-card {
+    min-height: 90vh;
+    flex-direction: column-reverse;
+}
+
+.video-container {
+    height: 97vh;
+}
+
+.basil-container a {
+    color: #e77d22;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 900px) {
@@ -123,11 +162,14 @@ video {
 
     .msg-card {
         flex-direction: row;
+    }
+
+    .msg-card p {
         font-size: 2rem;
     }
 
     .msg-card img {
-        max-height: 97vh;
+        height: 97vh;
     }
 
     .reverse {
@@ -136,6 +178,19 @@ video {
 
     .msg {
         max-width: 45vw;
+    }
+
+    .scroll {
+        height: 10vh;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+
+    .basil-container h1 {
+        height: 80vh;
+        align-content: center;
     }
 }
 
