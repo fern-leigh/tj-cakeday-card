@@ -9,6 +9,10 @@ body {
 
 }
 
+/* ----------- mobile ------------ */
+
+/* main */
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -62,6 +66,39 @@ button:active {
     background-color: limegreen;
 }
 
+/* index */
+
+a {
+    text-decoration: none;
+}
+
+.routes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.index-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80vw;
+    padding: 1rem 1rem 3rem 1rem;
+    margin-bottom: 3vh;
+    border: 2px solid #333;
+    border-radius: 7px;
+    box-shadow: 10px 10px 5px 0px #333;
+}
+
+.close {
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0 2vh 0;
+}
+
+/* messages */
+
 .msg-card {
     display: flex;
     flex-direction: column;
@@ -74,18 +111,31 @@ button:active {
     font-weight: 700;     
 }
 
-
-
-.basil-container p {
-    color: #e77d22;
+.msg-container p {
     padding: 3vh;
     border-radius: 10px;
     font-size: 1.2rem;
 }
 
-.basil-container h1 {
+.msg-container h1 {
     height: 70vh;
     align-content: center;
+}
+
+.basil p, .basil a, .basil h2 {
+    color: #e77d22;
+}
+
+.lily p, .lily a, .lily h2 {
+    color: magenta;
+}
+
+.fern p, .fern a, .fern h2 {
+    color: #21bc21;
+}
+
+.msg-container a {
+    text-decoration: none;
 }
 
 .video-container {
@@ -124,10 +174,8 @@ video {
     height: 97vh;
 }
 
-.basil-container a {
-    color: #e77d22;
-    text-decoration: none;
-}
+
+/* -------- large screens -------------- */
 
 @media only screen and (min-width: 900px) {
    .wrapper {
@@ -160,6 +208,30 @@ video {
         padding: 1vh 1vw;
     }
 
+    /* index */
+
+    .routes-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .index-card {
+        max-width: 20vw;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+
+    /* messages */
+
+    .msg-container h1 {
+        height: 80vh;
+        align-content: center;
+    }
+
+    .msg-container .lily {
+        height: 100vh;
+    }
+
     .msg-card {
         flex-direction: row;
     }
@@ -188,9 +260,6 @@ video {
     }
     
 
-    .basil-container h1 {
-        height: 80vh;
-        align-content: center;
-    }
+
 }
 

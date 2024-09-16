@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Basil() {
     return (
         <>
-            <div className="basil-container">
+            <div className="msg-container basil">
                 <Link to="/message-index">
                     <p>--back to message index--</p>
                 </Link>
