@@ -3,7 +3,6 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
-
 import Basil from "./routes/Basil.jsx"
 import Lily from './routes/Lily.jsx';
 import Fern from './routes/Fern.jsx';
@@ -35,10 +34,11 @@ const router = createBrowserRouter([
 import "./styles/app.css"
 
 export default function App() {
+
+
     return (
         <>
             <RouterProvider router={router} />
-
         </>
     );
 }

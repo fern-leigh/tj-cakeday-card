@@ -4,7 +4,14 @@ import toys from "../assets/toys-and-trash.jpg";
 import snow from "../assets/snow-dog.jpg";
 import frisbee from "../assets/frisbee-dog.mp4";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+
+
 export default function Basil() {
+    useEffect(() => {
+        window.scrollTo(0,0); 
+    });
+
     return (
         <>
             <div className="msg-container basil">
@@ -25,7 +32,7 @@ export default function Basil() {
                             <a href="#adventures">--next--</a>
                         </div>
                     </div>
-                    <div className="illustration">
+                    <div>
                         <img src={kindness} />
                     </div>
                 </div>

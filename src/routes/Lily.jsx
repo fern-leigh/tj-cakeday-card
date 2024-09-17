@@ -5,8 +5,13 @@ import teeth from "../assets/snow-teeth.jpg";
 import running from "../assets/running.jpg";
 import flip from "../assets/flip.mp4";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Lily() {
+    useEffect(() => {
+        window.scrollTo(0,0); 
+    });
+
     return (
         <>
             <div className="msg-container lily">
@@ -55,6 +60,7 @@ export default function Lily() {
                         <img src={ball} />
                     </div>
                 </div>
+
                 <div className="msg-card reverse lily" id="snow-teeth">
                     <div className="msg">
                         <p>I love aawoooo!!
@@ -79,6 +85,7 @@ export default function Lily() {
                         <img src={running} />
                     </div>
                 </div>
+
                 <div className="video-container" id="vid">
                     <div>
                         <p>You make me this excited!! I loooovveee Yoooou!!</p>
