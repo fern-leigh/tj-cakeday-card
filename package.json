@@ -1,12 +1,12 @@
 {
   "name": "tj-cakeday-card",
-  "homepage": "https://gitname.github.io/tj-cakeday-card",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://fern-leigh.github.io/tj-cakeday-card/",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",

@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import lilypad from '../assets/lilypad.jpg'
 import belly from '../assets/belly-scratches.jpg'
 import me from '../assets/look-down.jpg'
+import React from 'react';
+
 
 export default function Messages() {
     return (

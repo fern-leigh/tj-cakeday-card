@@ -1,6 +1,8 @@
 import hiking from "../assets/hiking2.png";
 import campsite from "../assets/campsite.png";
 import { Link } from 'react-router-dom';
+import React from 'react';
+
 
 
 const Home = () => {
