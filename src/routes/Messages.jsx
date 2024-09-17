@@ -33,7 +33,7 @@ export default function Messages() {
             </Link>
             </div>
         <div className='close'>
-            <Link to='/'>
+            <Link to='/tj-cakeday-card'>
             <button>
                 close card
             </button>
